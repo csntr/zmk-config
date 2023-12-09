@@ -26,11 +26,11 @@
 #define EXTPOW_TOG &ext_power EXT_POWER_TOGGLE_CMD
 #define RGB_UG_TOG &rgb_ug RGB_TOG
 
-// Adjust sticky-keys configuration.
-&sk {
-  release-after-ms = <1500>;
-  quick-release;
-};
+// // Adjust sticky-keys configuration.
+// &sk {
+//   release-after-ms = <1500>;
+//   quick-release;
+// };
 
 // Adjust Caps Word configuration.
 &caps_word {
@@ -171,25 +171,25 @@
    *
    * Particularly useful for Gmail keyboard shortcuts.
    */
-  behaviors {
-    // Comma -> Question mark.
-    comma_hash: comma_question {
-      compatible = "zmk,behavior-mod-morph";
-      label = "COMMA_QUESTION";
-      #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp POUND>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
+  // behaviors {
+  //   // Comma -> Question mark.
+  //   comma_hash: comma_question {
+  //     compatible = "zmk,behavior-mod-morph";
+  //     label = "COMMA_QUESTION";
+  //     #binding-cells = <0>;
+  //     bindings = <&kp COMMA>, <&kp POUND>;
+  //     mods = <(MOD_LSFT|MOD_RSFT)>;
+  //   };
   
-    // Period -> Exclamation mark.
-    dot_excl: period_exclamation {
-      compatible = "zmk,behavior-mod-morph";
-      label = "PERIOD_EXCLAMATION";
-      #binding-cells = <0>;
-      bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-  };
+  //   // Period -> Exclamation mark.
+  //   dot_excl: period_exclamation {
+  //     compatible = "zmk,behavior-mod-morph";
+  //     label = "PERIOD_EXCLAMATION";
+  //     #binding-cells = <0>;
+  //     bindings = <&kp PERIOD>, <&kp EXCLAMATION>;
+  //     mods = <(MOD_LSFT|MOD_RSFT)>;
+  //   };
+  // };
 
   /**
    * 36-key keymap, using a Dvorak or Aptmak base layer.
@@ -201,7 +201,7 @@
     dvorak {
       bindings = <
   /* ╭──────────────────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────────────────╮ */
-       &kp APOS     &comma_hash  &dot_excl    &kp P        &kp Y            &kp F        &kp G        &kp C        &kp R        &kp L
+       &kp APOS     &kp W  &dot_excl    &kp P        &kp Y            &kp F        &kp G        &kp C        &kp R        &kp L
        &kp A        &kp O        &kp E        &kp U        &kp I            &kp D        &kp H        &kp T        &kp N        &kp S
        &none        &kp Q        &kp J        &kp K        &kp X            &kp B        &kp M        &kp W        &kp V        &kp Z
   /* ╰──────────────────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────────────────╯ */
