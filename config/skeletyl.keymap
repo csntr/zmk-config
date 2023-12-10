@@ -227,7 +227,7 @@
 
         layer_4 {
             bindings = <
-&kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDERSCORE  &trans      &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp UNDERSCORE  &none       &kp AMPERSAND  &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
 &kp EXCLAMATION  &kp MINUS      &kp PLUS          &kp EQUAL       &kp HASH    &kp PIPE       &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION
 &kp CARET        &kp SLASH      &kp ASTERISK      &kp BACKSLASH   &none       &kp TILDE      &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
                                 &trans            &trans          &trans      &trans         &trans         &trans
