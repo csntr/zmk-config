@@ -200,10 +200,10 @@
 
         layer_1 {
             bindings = <
-&kp LG(GRAVE)  &trans     &trans     &kp LG(LS(NUMBER_4))  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
-&kp LCTRL      &kp LALT   &kp LGUI   &kp LSHFT             &caps_word    &kp LEFT              &kp DOWN              &kp UP             &kp RIGHT        &trans
-&kp LG(Z)      &kp LG(X)  &kp LG(C)  &kp TAB               &kp LG(V)     &kp C_PREVIOUS        &kp C_PLAY_PAUSE      &kp C_NEXT         &trans           &trans
-                          &trans     &trans                &trans        &trans                &trans                &trans
+&trans     &trans     &kp LG(GRAVE)  &kp LG(LS(NUMBER_4))  &trans        &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_MUTE
+&kp LCTRL  &kp LALT   &kp LGUI       &kp LSHFT             &caps_word    &kp LEFT              &kp DOWN              &kp UP             &kp RIGHT        &trans
+&kp LG(Z)  &kp LG(X)  &kp LG(C)      &kp TAB               &kp LG(V)     &kp C_PREVIOUS        &kp C_PLAY_PAUSE      &kp C_NEXT         &trans           &trans
+                      &trans         &trans                &trans        &trans                &trans                &trans
             >;
         };
 
