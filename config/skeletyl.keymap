@@ -200,10 +200,10 @@
 
         navigation {
             bindings = <
-&kp Q      &kp LG(GRAVE)  &none      &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))    &trans    &trans         &trans  &trans     &kp CAPSLOCK
-&sk LCTRL  &sk LALT       &sk LGUI   &sk LEFT_SHIFT        &caps_word        &kp LEFT  &kp DOWN       &kp UP  &kp RIGHT  &kp DELETE
-&kp LG(Z)  &kp LG(X)      &kp LG(C)  &kp TAB               &kp LG(V)         &trans    &kp BACKSPACE  &trans  &trans     &trans
-                          &trans     &trans                &trans            &trans    &trans         &trans
+&kp Q      &kp LG(GRAVE)  &none      &kp LG(LS(NUMBER_4))  &kp LG(LS(N5))    &trans             &trans    &trans  &trans     &kp CAPSLOCK
+&sk LCTRL  &sk LALT       &sk LGUI   &sk LEFT_SHIFT        &caps_word        &kp LEFT           &kp DOWN  &kp UP  &kp RIGHT  &kp DELETE
+&kp LG(Z)  &kp LG(X)      &kp LG(C)  &kp TAB               &kp LG(V)         &kp LA(BACKSPACE)  &trans    &trans  &trans     &trans
+                          &trans     &trans                &trans            &trans             &trans    &trans
             >;
         };
 
