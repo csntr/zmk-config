@@ -182,6 +182,48 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp LS(LA(LC(LGUI)))>;
         };
+
+        left_paren: left_paren {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_PAREN";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        right_paren: right_paren {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_PAREN";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        left-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <26 27>;
+        };
+
+        right-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <27 28>;
+        };
+
+        left-paren {
+            bindings = <&left_paren>;
+            key-positions = <6 7>;
+        };
+
+        right-paren {
+            bindings = <&right_paren>;
+            key-positions = <7 8>;
+        };
     };
 
     keymap {
